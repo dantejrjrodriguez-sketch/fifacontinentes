@@ -1,0 +1,81 @@
+/* rusia.css */
+
+/* estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* header */
+header {
+    background: linear-gradient(to right, #0039A6, #FFFFFF, #D52B1E); /* Azul, blanco y rojo de la bandera rusa */
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+/* contenedor de la tabla */
+.padre {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #0039A6; /* azul bandera rusa */
+    color: #fff;
+    font-size: 1.1em;
+}
+
+/* imágenes de los jugadores */
+td img {
+    width: 160px;         /* ancho uniforme */
+    height: 200px;        /* alto proporcional */
+    object-fit: cover;    /* recorta sin deformar */
+    object-position: top; /* prioriza mostrar la cabeza */
+    border-radius: 8px;
+}
+
+/* filas alternas */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* footer */
+footer {
+    background-color: #0039A6;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}

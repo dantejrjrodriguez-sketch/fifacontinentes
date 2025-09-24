@@ -1,0 +1,75 @@
+/* suecia.css */
+
+/* Estilos generales */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #005cbf; /* Azul bandera Suecia */
+  font-size: 2em;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #ffd700; /* Amarillo bandera Suecia */
+  color: #005cbf; /* Azul bandera Suecia */
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Imagen del jugador */
+td img {
+  width: 160px;         /* ancho grande y uniforme */
+  height: 200px;        /* alto proporcional */
+  object-fit: cover;    /* recorta sin deformar */
+  object-position: top; /* prioriza mostrar la cabeza */
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Links */
+td a {
+  color: #005cbf;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+}

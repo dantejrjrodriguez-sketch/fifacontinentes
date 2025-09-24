@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfd;
+    color: #222;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #00247D 33%, #FCD116 33%, #EF3340 100%); /* Azul, amarillo, rojo */
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Contenedor principal */
+.padre {
+    margin-top: 30px;
+    overflow-x: auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 15px 12px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #D90012; /* Rojo bandera */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Filas alternadas y hover */
+tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+tr:hover td {
+    background-color: #fff2f2;
+    transition: background 0.3s ease;
+}
+
+/* Imágenes */
+td img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    border: 2px solid #D90012;
+}
+
+/* Párrafos dentro de celdas */
+td p {
+    line-height: 1.5;
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: linear-gradient(to right, #00247D 33%, #FCD116 33%, #EF3340 100%);
+    color: white;
+    text-align: center;
+    font-size: 0.95em;
+    border-top: 5px solid #D90012;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    td img {
+        width: 120px;
+        height: 160px;
+    }
+
+    th, td {
+        padding: 10px 8px;
+        font-size: 0.85rem;
+    }
+}

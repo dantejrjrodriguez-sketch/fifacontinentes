@@ -1,0 +1,76 @@
+/* Estilos generales */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #006847, #ffffff, #ce1126); /* Verde, blanco y rojo */
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Encabezados de la tabla */
+th {
+  background: #006847; /* Verde bandera */
+  color: #fff;
+  font-size: 1em;
+}
+
+/* Filas */
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tr:hover {
+  background: #ffecec; /* Un ligero rojo al pasar el mouse */
+  transition: 0.3s;
+}
+
+/* Imágenes */
+td img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ce1126; /* Borde rojo */
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  padding: 10px;
+  border-top: 3px solid #006847; /* Verde */
+}

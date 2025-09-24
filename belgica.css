@@ -1,0 +1,99 @@
+/* belgica.css */
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(90deg, #000000, #FFD700, #D91F26); /* negro, amarillo, rojo */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Contenedor de la tabla */
+.padre {
+    width: 95%;
+    margin: 30px auto;
+    overflow-x: auto;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Encabezados */
+table th {
+    background-color: #D91F26; /* rojo Bélgica */
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-size: 1em;
+    border-bottom: 2px solid #FFD700; /* amarillo Bélgica */
+}
+
+/* Celdas */
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+
+/* Filas alternadas */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover en filas */
+table tr:hover {
+    background-color: #ffe680; /* amarillo suave al pasar el mouse */
+    transition: 0.3s;
+}
+
+/* Imágenes de los jugadores */
+table td img {
+    width: 160px;         /* ancho grande y uniforme */
+    height: 200px;        /* alto proporcional */
+    object-fit: cover;    /* recorta sin deformar */
+    object-position: top; /* prioriza mostrar la cabeza */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Párrafos dentro de celdas */
+table td p {
+    margin: 0;
+    font-size: 0.95em;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}

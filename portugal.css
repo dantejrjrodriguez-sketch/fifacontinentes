@@ -1,0 +1,88 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #006600, #ff0000); /* Verde y rojo bandera Portugal */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Contenedor */
+.padre {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Tabla */
+table {
+    border-collapse: collapse;
+    width: 95%;
+    max-width: 1200px;
+    background: #fff;
+    border: 3px solid #006600;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Encabezados de la tabla */
+th {
+    background: #ff0000; /* Rojo bandera */
+    color: #fff;
+    padding: 12px;
+    font-size: 1.1em;
+    border: 1px solid #fff;
+}
+
+/* Celdas */
+td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+}
+
+/* Filas alternas */
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Imágenes */
+img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #006600; /* Verde */
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #fff;
+    background: linear-gradient(to right, #ff0000, #006600); /* Rojo a verde */
+    padding: 15px;
+    border-radius: 10px;
+}
+/* Imágenes */
+img {
+    width: 150px;       /* ancho fijo */
+    height: 180px;      /* alto fijo */
+    object-fit: cover;  /* recorta sin deformar */
+    border-radius: 10px;
+    border: 2px solid #006600; /* Verde */
+}

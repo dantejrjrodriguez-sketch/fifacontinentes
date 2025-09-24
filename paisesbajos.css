@@ -1,0 +1,79 @@
+/* paisesbajos.css */
+
+/* Estilos generales del body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #ff6600; /* Naranja representativo de Países Bajos */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Contenedor de la tabla */
+.padre {
+    width: 90%;
+    margin: 30px auto;
+    overflow-x: auto;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Encabezados */
+th {
+    background-color: #002663; /* Azul oscuro representativo */
+    color: #fff;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+/* Filas de la tabla */
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+/* Efecto hover en filas */
+tr:hover {
+    background-color: #ffe6cc; /* Naranja muy claro al pasar el mouse */
+}
+
+/* Imágenes de los jugadores */
+td img {
+    width: 160px;         /* ancho uniforme */
+    height: 200px;        /* alto proporcional */
+    object-fit: cover;    /* recorta sin deformar */
+    object-position: top; /* prioriza mostrar la cabeza */
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #002663; /* Azul oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* Texto del footer */
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}

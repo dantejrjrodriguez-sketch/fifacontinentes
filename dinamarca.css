@@ -1,0 +1,108 @@
+/* dinamarca.css */
+
+/* estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    background-color: #c60c30; /* color rojo Dinamarca */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* contenedor de la tabla */
+.padre {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+/* cabecera de la tabla */
+th {
+    background-color: #ff0000; /* rojo brillante Dinamarca */
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* filas de la tabla */
+td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+/* imágenes de los jugadores */
+td img {
+    width: 160px;          /* ancho uniforme */
+    height: 200px;         /* alto proporcional */
+    object-fit: cover;     /* recorta sin deformar */
+    object-position: top;  /* prioriza mostrar la cabeza */
+    border-radius: 8px;
+}
+
+/* filas alternas */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* párrafos dentro de td */
+td p {
+    margin: 0;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+/* footer */
+footer {
+    background-color: #c60c30;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    td img {
+        width: 120px;
+        height: 150px;
+    }
+
+    th, td {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+}

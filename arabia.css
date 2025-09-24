@@ -1,0 +1,84 @@
+/* estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5; /* fondo muy claro */
+    margin: 20px;
+    color: #064c2e; /* verde oscuro similar al de la bandera */
+}
+
+header h1 {
+    text-align: center;
+    color: #006c35; /* verde vivo Arabia Saudita */
+    margin-bottom: 30px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0,108,53,0.4);
+}
+
+.padre {
+    overflow-x: auto; /* para que la tabla sea responsiva */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 6px 18px rgba(0,108,53,0.15); /* sombra verde suave */
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid #006c35; /* borde verde fuerte */
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #c2e6d9; /* línea verde clara */
+    font-size: 0.95rem;
+}
+
+th {
+    background: linear-gradient(90deg, #006c35 0%, #004d27 100%);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td img {
+    width: 100px;
+    height: 120px; /* más alto para que no corte la cabeza */
+    object-fit: cover;
+    object-position: center top; /* centra la parte superior */
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,108,53,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0,108,53,0.6);
+}
+
+/* limitar texto a 5 líneas */
+td p {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    color: #064c2e; /* texto un poco más oscuro */
+}
+
+/* responsive para pantallas chicas */
+@media screen and (max-width: 768px) {
+    th, td {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+    td img {
+        width: 80px;
+        height: 100px;
+    }
+}

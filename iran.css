@@ -1,0 +1,103 @@
+/* iran.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2; /* fondo neutro pero claro para resaltar tabla */
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #239f40, #fff, #da0000); /* verde-blanco-rojo */
+    color: #000;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Contenedor de la tabla */
+.padre {
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+    overflow-x: auto;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #239f40; /* borde verde */
+}
+
+th {
+    background-color: #239f40; /* verde de Irán */
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Filas alternas */
+tr:nth-child(even) {
+    background-color: #f1f5f9; /* gris claro */
+}
+
+tr:nth-child(odd) {
+    background-color: #fff; 
+}
+
+tr:hover {
+    background-color: #fce2e2; /* rojo suave al pasar el mouse */
+    transition: 0.3s;
+}
+
+/* Imágenes: estilo Egipto/Qatar */
+td img {
+    width: 120px;  /* tamaño fijo */
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #239f40; /* borde verde de Irán */
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Párrafos dentro de la tabla */
+td p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #239f40, #fff, #da0000);
+    color: #000;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+}
+
+footer p {
+    font-size: 0.9rem;
+}

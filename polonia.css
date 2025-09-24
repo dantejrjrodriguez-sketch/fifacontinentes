@@ -1,0 +1,87 @@
+/* polonia.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #ffffff 50%, #dc143c 50%); /* bandera Polonia */
+    text-align: center;
+    padding: 20px;
+    color: #000;
+    border-bottom: 4px solid #dc143c;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+/* Contenedor de la tabla */
+.padre {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    overflow-x: auto;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Cabecera de la tabla */
+th {
+    background: #dc143c;
+    color: #fff;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+}
+
+/* Filas */
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tr:hover {
+    background: rgba(220, 20, 60, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+/* Celdas de imagen */
+td img {
+    width: 160px;         /* ancho uniforme */
+    height: 200px;        /* alto proporcional */
+    object-fit: cover;    /* recorta sin deformar */
+    object-position: top; /* prioriza mostrar la cabeza */
+    border-radius: 8px;
+    border: 2px solid #dc143c;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background: #dc143c;
+    color: #fff;
+    padding: 15px;
+    font-size: 0.9em;
+    border-top: 3px solid #000;
+}

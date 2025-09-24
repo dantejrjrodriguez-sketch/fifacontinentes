@@ -1,0 +1,88 @@
+/* qatar.css */
+
+/* Fuente y colores principales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #8A1538, #ffffff); /* Granate Qatar + blanco */
+    color: #222;
+}
+
+/* Encabezado */
+header {
+    background-color: #8A1538; /* granate Qatar */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #d4af37; /* dorado para resaltar */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px #000;
+}
+
+/* Contenedor */
+.padre {
+    margin: 30px auto;
+    width: 90%;
+    overflow-x: auto;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+th, td {
+    border: 1px solid #d4af37; /* borde dorado */
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #8A1538; /* granate */
+    color: #fff;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+/* Filas alternas */
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+tr:hover {
+    background-color: #ffeeba;
+    transition: 0.3s;
+}
+
+/* Imágenes: mismo estilo que en Egipto.css */
+td img {
+    width: 120px;  /* mismo tamaño */
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #8A1538; /* borde granate */
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Pie de página */
+footer {
+    background-color: #8A1538;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 5px solid #d4af37;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}

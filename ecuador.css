@@ -1,0 +1,113 @@
+/* ecuador.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff6e5; /* Fondo claro para resaltar los colores */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.2em;
+    color: #FFD700; /* Amarillo de la bandera */
+    text-shadow: 1px 1px #0055A4; /* Sombra azul */
+}
+
+/* Contenedor de la tabla */
+.padre {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Cabecera de la tabla */
+th {
+    background: linear-gradient(90deg, #FFD700, #0055A4, #C60B1E); /* Amarillo - Azul - Rojo */
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 1em;
+}
+
+/* Celdas */
+td {
+    padding: 12px 15px;
+    vertical-align: top;
+}
+
+/* Párrafos dentro de td */
+td p {
+    margin-bottom: 8px;
+}
+
+/* Imágenes equilibradas */
+td img {
+    width: 130px;          /* un poquito más ancho */
+    height: 180px;         /* más alto para que no corte la cabeza */
+    object-fit: contain;   /* muestra la imagen completa sin cortar */
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #FFD700; /* borde amarillo */
+    background-color: #f9f9f9; /* relleno para las imágenes que no llenen el cuadro */
+}
+
+/* Filas alternadas */
+tr:nth-child(even) {
+    background-color: #f0f8ff; /* azul muy suave */
+}
+
+/* Hover en filas */
+tr:hover {
+    background-color: #FFF0F0; /* rojo muy suave */
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    td img {
+        width: 90px;
+        height: 120px;
+    }
+
+    th, td {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+}

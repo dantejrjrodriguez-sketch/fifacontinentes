@@ -1,0 +1,88 @@
+/* peru.css */
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* blanco de la bandera */
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #fff; /* fondo blanco */
+    text-align: center;
+    padding: 25px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #d91023; /* texto rojo de la bandera */
+    font-size: 2em;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Tabla contenedora */
+.padre {
+    width: 90%;
+    margin: 30px auto;
+    overflow-x: auto;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #d91023; /* rojo bandera */
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Filas alternas */
+tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+/* Imágenes de jugadores */
+td img {
+    width: 160px;          /* ancho uniforme */
+    height: 200px;         /* alto proporcional */
+    object-fit: cover;     /* recorta sin deformar */
+    object-position: top;  /* prioriza mostrar la cabeza */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: block;
+    margin: auto;
+    border: 2px solid #d91023; /* borde rojo bandera */
+}
+
+/* Footer */
+footer {
+    background-color: #d91023; /* rojo bandera */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}

@@ -1,0 +1,74 @@
+/* hungria.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ce2b37, #ffffff, #00853f); /* Rojo, blanco, verde */
+    color: #000;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #ce2b37; /* rojo bandera */
+    color: white;
+    font-size: 1.1em;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #e6ffe6; /* verde claro */
+    transition: background 0.3s ease;
+}
+
+/* Imágenes de los jugadores */
+td img {
+    width: 160px;         /* ancho uniforme */
+    height: 200px;        /* alto proporcional */
+    object-fit: cover;    /* recorta sin deformar */
+    object-position: top; /* prioriza mostrar la cabeza */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+    border-top: 2px solid #00853f;
+    padding-top: 10px;
+}

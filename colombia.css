@@ -1,0 +1,117 @@
+/* colombia.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8dc; /* un amarillo suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffd700; /* amarillo bandera */
+    color: #0033a0; /* azul bandera */
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 5px solid #ce1126; /* rojo bandera */
+}
+
+.padre {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+}
+
+th {
+    background-color: #0033a0; /* azul bandera */
+    color: #ffd700; /* amarillo bandera */
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+td p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+footer {
+    background-color: #ce1126; /* rojo bandera */
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Efecto hover para filas */
+table tr:hover {
+    background-color: #fef3b7; /* amarillo clarito */
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    td {
+        padding: 10px;
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        font-weight: 700;
+        color: #0033a0;
+    }
+
+    img {
+        max-width: 80px;
+    }
+}

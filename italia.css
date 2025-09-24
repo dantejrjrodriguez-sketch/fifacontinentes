@@ -1,0 +1,74 @@
+/* estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    background: linear-gradient(to right, #009246, #ffffff, #ce2b37); /* Verde, blanco, rojo */
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+/* contenedor de la tabla */
+.padre {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+/* tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #ce2b37; /* rojo */
+    color: white;
+    font-size: 1.1em;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+    transition: 0.3s;
+}
+
+/* imágenes de los jugadores */
+td img {
+    width: 160px;         /* ancho más grande */
+    height: 200px;        /* alto proporcional */
+    object-fit: cover;    /* recorta sin deformar */
+    object-position: top; /* prioriza mostrar la cabeza */
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* footer */
+footer {
+    background-color: #009246; /* verde */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}

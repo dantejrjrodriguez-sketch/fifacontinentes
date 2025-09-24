@@ -1,0 +1,88 @@
+/* japon.css */
+
+/* Estilo general del body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #BC002D; /* Rojo Japón */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Contenedor de la tabla */
+.padre {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto; /* Para que la tabla no se rompa en móviles */
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #BC002D; /* borde rojo */
+}
+
+/* Encabezados de tabla */
+th {
+    background-color: #BC002D; /* rojo bandera */
+    color: white;
+    font-size: 1.1em;
+}
+
+/* Filas alternas */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ffe6e6; /* un rosado suave al pasar el mouse */
+    transition: 0.3s;
+}
+
+/* Imágenes: tamaño fijo y cabeza visible */
+td img {
+    width: 120px;        /* ancho fijo */
+    height: 150px;       /* alto fijo */
+    object-fit: cover;   /* recorta sin deformar */
+    object-position: top; /* prioriza mostrar la cabeza */
+    border-radius: 10px;
+    border: 3px solid #BC002D;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #BC002D;
+    color: white;
+    margin-top: 30px;
+    border-top: 5px solid #d4af37; /* opcional, para resaltar */
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}

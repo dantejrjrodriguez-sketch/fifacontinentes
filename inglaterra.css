@@ -1,0 +1,91 @@
+/* inglaterra.css */
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #d91f26; /* rojo Inglaterra */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Contenedor de la tabla */
+.padre {
+    width: 90%;
+    margin: 30px auto;
+    overflow-x: auto;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Encabezados */
+table th {
+    background-color: #d91f26; /* rojo Inglaterra */
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-size: 1em;
+    border-bottom: 2px solid #bbb;
+}
+
+/* Celdas */
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+
+/* Filas alternadas */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Imágenes de los jugadores */
+table td img {
+    width: 160px;         /* ancho grande y uniforme */
+    height: 200px;        /* alto proporcional */
+    object-fit: cover;    /* recorta sin deformar */
+    object-position: top; /* prioriza mostrar la cabeza */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Párrafos dentro de celdas */
+table td p {
+    margin: 0;
+    font-size: 0.95em;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}

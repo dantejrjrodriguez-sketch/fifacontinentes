@@ -1,0 +1,60 @@
+/* Estilos generales */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #006233; /* Verde bandera Marruecos */
+  font-size: 2em;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+  border: 1px solid #006233; /* borde verde bandera Marruecos */
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #c1272d; /* Rojo bandera Marruecos */
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Imagen de jugador */
+td img {
+  width: 120px;      /* ancho fijo */
+  height: auto;      /* altura automática */
+  border-radius: 10px;
+  border: 3px solid #006233; /* borde verde bandera */
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.4);
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+}

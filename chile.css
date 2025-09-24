@@ -1,0 +1,150 @@
+/* chile.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d52b1e; /* rojo bandera de Chile */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.padre {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px 12px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #0033a0; /* azul bandera Chile */
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+tr:hover {
+    background-color: #f0f7ff;
+}
+
+td img {
+    max-width: 110px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+td p {
+    margin: 0 0 8px 0;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+footer {
+    background-color: #0033a0; /* azul bandera Chile */
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    letter-spacing: 0.8px;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 25px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 15px;
+        background-color: white;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    td {
+        border: none;
+        padding: 12px 10px;
+        position: relative;
+        padding-left: 50%;
+        font-size: 0.9rem;
+    }
+
+    td:before {
+        position: absolute;
+        top: 12px;
+        left: 15px;
+        width: 45%;
+        white-space: nowrap;
+        font-weight: 700;
+        color: #d52b1e;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+
+    td:nth-of-type(1):before { content: "Nombre"; }
+    td:nth-of-type(2):before { content: "Posición"; }
+    td:nth-of-type(3):before { content: "Edad"; }
+    td:nth-of-type(4):before { content: "Bibliografía"; }
+    td:nth-of-type(5):before { content: "Portada"; }
+
+    td img {
+        max-width: 90px;
+    }
+}
+/* Imágenes de jugadores */
+td img {
+    width: 160px;           /* ancho uniforme */
+    height: 200px;          /* alto proporcional */
+    object-fit: cover;      /* recorta sin deformar */
+    object-position: top;   /* prioriza mostrar la cabeza */
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    border: 2px solid #0033a0; /* borde azul de la bandera */
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    td img {
+        width: 120px;
+        height: 150px;
+    }
+}

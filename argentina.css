@@ -1,0 +1,101 @@
+/* argentina.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff; /* azul celeste suave */
+    margin: 0;
+    padding: 20px;
+    color: #1a1a1a;
+}
+
+header {
+    background-color: #74a9d8; /* azul más intenso */
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.padre {
+    max-width: 1200px;
+    margin: 30px auto;
+    overflow-x: auto; /* Para scroll horizontal si es necesario */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #6ca0dc; /* azul para encabezados */
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e6f0fa;
+    transition: 0.3s;
+}
+
+/* Imágenes de jugadores */
+td img {
+    width: 160px;          /* ancho uniforme */
+    height: 200px;         /* alto proporcional */
+    object-fit: cover;     /* recorta sin deformar */
+    object-position: top;  /* prioriza mostrar la cabeza */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    display: block;
+    margin: auto;
+    border: 2px solid #6ca0dc; /* borde azul */
+}
+
+/* Párrafos dentro de celdas */
+td p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #333;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    th, td {
+        padding: 10px 8px;
+        font-size: 0.85rem;
+    }
+    
+    td img {
+        width: 120px;
+        height: 150px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,95 @@
+/* brasil.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F0F8FF; /* un celeste suave */
+    color: #004400; /* verde oscuro para texto */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #009B3A; /* verde bandera */
+    color: #FFDF00; /* amarillo bandera */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.padre {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    overflow-x: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #FFDF00; /* amarillo bandera */
+    color: #004400; /* verde oscuro */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e8f5e9; /* verde claro al pasar el mouse */
+    transition: 0.3s;
+}
+
+/* Imágenes de jugadores */
+td img {
+    width: 160px;          /* ancho uniforme */
+    height: 200px;         /* alto proporcional */
+    object-fit: cover;     /* recorta sin deformar */
+    object-position: top;  /* prioriza mostrar la cabeza */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    display: block;
+    margin: auto;
+    border: 2px solid #FFDF00; /* borde amarillo */
+}
+
+footer {
+    background-color: #002776; /* azul oscuro bandera */
+    color: #FFDF00; /* amarillo */
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    td img {
+        width: 120px;
+        height: 150px;
+    }
+}

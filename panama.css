@@ -1,0 +1,77 @@
+/* Estilos generales */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #ff0000, #ffffff, #005bbb); /* Rojo, blanco y azul */
+  padding: 20px;
+  border-radius: 10px;
+  color: #000;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Encabezados de la tabla */
+th {
+  background: #005bbb; /* Azul bandera Panamá */
+  color: #fff;
+  font-size: 1em;
+}
+
+/* Filas */
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tr:hover {
+  background: #ffecec; /* Rojo claro al pasar el mouse */
+  transition: 0.3s;
+}
+
+/* Imágenes */
+td img {
+  width: 120px;              /* Un poco más grande */
+  height: 120px;
+  object-fit: cover;         /* Mantiene proporción y recorta */
+  object-position: top center; /* Se enfoca en la parte superior (cabeza) */
+  border-radius: 8px;
+  border: 2px solid #ff0000;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  padding: 10px;
+  border-top: 2px solid #005bbb;
+}
